@@ -1,5 +1,5 @@
 # AI Dietician
-Python, Django, HTML, CSS
+Python, Django, HTML, CSS, JavaScript
 -------
 
 
