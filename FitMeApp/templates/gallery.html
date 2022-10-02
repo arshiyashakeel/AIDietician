@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<style>
+    section .gallery-1{
+        position: absolute;
+        left:0;
+        margin: 0;
+        padding: 0;
+
+    }
+
+.gallery-1 img{
+    float: left;
+    height: 60vh;
+    width: 30vw;
+    margin: 10%;
+    padding: 10%;
+}
+</style>
+
+<section id="content">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about-logo">
+                    <h3>Our <span class="color">Gallery</span></h3>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Start Gallery 1-2 -->
+<section class="gallery-1">
+    <div class="container">
+        <!-- /.gallery-filter -->
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{% static 'img/works/1.jpg' %}" class="img-responsive" alt="1st gallery Thumb">
+            </div>
+            <div class="col-md-4">
+               <img src="{% static 'img/works/2.jpg' %}" class="img-responsive" alt="2nd gallery Thumb">
+            </div>
+            <div class="col-md-4">
+               <img src="{% static 'img/works/3.jpg' %}" class="img-responsive" alt="3rd gallery Thumb">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{% static 'img/works/4.jpg' %}" class="img-responsive" alt="4th gallery Thumb">
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'img/works/5.jpg' %}" class="img-responsive" alt="5th gallery Thumb">
+            </div>
+            <div class="col-md-4">
+               <img src="{% static 'img/works/6.jpg' %}" class="img-responsive" alt="6th gallery Thumb">
+            </div>
+        </div>
+
+        <!-- /.container -->
+    </div>
+</section>
+<!--// End Gallery 1-2 -->
+</div>
+
+{% endblock %}

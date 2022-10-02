@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{% load static %}
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="{% static '/css/materialize.min.css' %}" media="screen,projection" />
+	<link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet" />
+	<link href="{% static '/css/jquery.fancybox.css' %}" rel="stylesheet">
+	<link href="{% static '/css/flexslider.css' %}" rel="stylesheet" />
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static '/img/apple-touch-icon.png' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static '/img/favicon-32x32.png' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static '/img/favicon-16x16.png' %}">
+	<link rel="manifest" href="{% static '/img/site.webmanifest' %}">
+	<title>AI Dietician</title>
+</head>
+
+<body style="background:#fff !important">
+<br><br>
+
+ <h1 class="visually-hidden text-center">AI Dietplan</h1>
+
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">BMR: {{bmr}}</h2>
+    <h3 class="pb-2 border-bottom">SNACKS,TORTILLA CHIPS,LT (BAKED W/ LESS OIL)	,CHEESE,SWISS,LOW FAT, BUTTER OIL,ANHYDROUS	</h3>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+        </div>
+			<br>
+        <h2>Carotene : {{Carotene}}</h2>
+        <h2>Carbohydrate : {{Carbohydrate}}</h2>
+        <h2>Sugar : {{Sugar}}</h2>
+        <h2>Water : {{Water}}</h2>
+        <h2>Cholesterol : {{Cholesterol}}</h2>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+	<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
+	<script src="{% static '/js/jquery.js' %}"></script>
+	<script src="{% static '/js/jquery.easing.1.3.js' %}"></script>
+	<script src="{% static '/js/materialize.min.js' %}"></script>
+	<script src="{% static '/js/bootstrap.min.js' %}"></script>
+	<script src="{% static '/js/jquery.fancybox.pack.js' %}"></script>
+	<script src="{% static '/js/jquery.fancybox-media.js' %}"></script>
+	<script src="{% static '/js/jquery.flexslider.js' %}"></script>
+	<script src="{% static '/js/animate.js' %}"></script>
+	<script src="{% static '/js/modernizr.custom.js' %}"></script>
+	<script src="{% static '/js/jquery.isotope.min.js' %}"></script>
+	<script src="{% static '/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static '/js/animate.js' %}"></script>
+	<script src="{% static '/js/custom.js' %}"></script>
+</body>
+
+</html>
